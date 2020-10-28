@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "functions";
+@import "variables";
+
+$sans-serif: "Raleway", Helvetica, Verdana;
+$header-sans-serif: "Lobster", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono";
+$enable-responsive-font-sizes: true;
+
+// $theme-colors: (
+
+// );
+
+// $link-color: theme-color("secondary");
+// $link-hover-color: darken($link-color, 20%);
+
+
+@import "bootstrap";
+
+/*********************************
+Global Style Rules
+**********************************/
+
+/* NAVIGATION */
+.navbar-center{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: capitalize;
+    
+}
+
+.scroll-effect{
+    transition: 500ms ease;
+    background: transparent;
+}
+.scroll-effect.scrolled{
+    background:$light;
+}
+
+/* HERO */
+.hero{
+    background:linear-gradient(to right bottom, rgba(0, 255, 252, .4), rgba(0, 215, 255, .4), rgba(0, 172, 255, .4), rgba(0, 124, 234, .4), rgba(88, 68, 185, .4)),
+    url(../images/diego-catto-DI6ywiG5N0g-unsplash.jpg);
+    background-size: cover;
+    background-position: bottom;
+
+    // background:bottom/cover;
+    // background-image: ;
+    height: 100vh;
+    min-height: 100vh;
+    // background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+.title{
+    font-family: $header-sans-serif;
+}
+.subtitle{
+    font-weight: 200;
+}
+
+
+/* SOUND BAR FOR HOME */
+#soundbarhome{
+    background:linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 251, 251, 0.2)),
+    url(../images/M&S-reception-114.jpeg)bottom/cover;
+    height: 30vh;
+    min-height: 30vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    // background-attachment: fixed;
+
+}
+
+
+
+
+/************************************
+        ABOUT PAGE
+**************************************/
+
+/* HERO SECTION */
+.about-hero{
+    background:linear-gradient(to right bottom, rgba(0, 255, 252, .4), rgba(0, 215, 255, .4), rgba(0, 172, 255, .4), rgba(0, 124, 234, .4), rgba(88, 68, 185, .4)),
+    url(../images/diego-catto-DI6ywiG5N0g-unsplash.jpg);
+    background-size: cover;
+    background-position: bottom;
+
+    // background:bottom/cover;
+    // background-image: ;
+    height: 50vh;
+    min-height: 50vh;
+    // background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+
+
+
+/************************************
+        MUSIC PAGE
+**************************************/
+
+/* HERO SECTION */
+.music-hero{
+    background:linear-gradient(to right bottom, rgba(0, 255, 252, .4), rgba(0, 215, 255, .4), rgba(0, 172, 255, .4), rgba(0, 124, 234, .4), rgba(88, 68, 185, .4)),
+    url(../images/diego-catto-DI6ywiG5N0g-unsplash.jpg);
+    background-size: cover;
+    background-position: bottom;
+
+    // background:bottom/cover;
+    // background-image: ;
+    height: 50vh;
+    min-height: 50vh;
+    // background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+
+
+/************************************
+        BOOK PAGE
+**************************************/
+
+/* HERO SECTION */
+.book-hero{
+    background:linear-gradient(to right bottom, rgba(0, 255, 252, .4), rgba(0, 215, 255, .4), rgba(0, 172, 255, .4), rgba(0, 124, 234, .4), rgba(88, 68, 185, .4)),
+    url(../images/diego-catto-DI6ywiG5N0g-unsplash.jpg);
+    background-size: cover;
+    background-position: bottom;
+
+    // background:bottom/cover;
+    // background-image: ;
+    height: 50vh;
+    min-height: 50vh;
+    // background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+
+
+
+/************************************
+        CONTACT PAGE
+**************************************/
+
+/* HERO SECTION */
+.contact-hero{
+    background:linear-gradient(to right bottom, rgba(0, 255, 252, .4), rgba(0, 215, 255, .4), rgba(0, 172, 255, .4), rgba(0, 124, 234, .4), rgba(88, 68, 185, .4));
+    // url(../images/diego-catto-DI6ywiG5N0g-unsplash.jpg);
+    background-size: cover;
+    background-position: bottom;
+
+    // background:bottom/cover;
+    // background-image: ;
+    height: 100vh;
+    min-height: 100vh;
+    // background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
