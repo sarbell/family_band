@@ -49,14 +49,37 @@ a{
     text-transform: capitalize;
     font-size: 1.2rem;   
 }
-.nav-item.active{
+.nav-item{
     text-decoration: none;
     text-decoration-color: linear-gradient(to left, #92dce5, #4ebfe3, #009fe2, #1c7ad8, #5b4dbc);
 }
 
+a.left
+{
+    position: relative;
+}
+
+a.left:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #92dce5;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+a.left:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
+
+
+
 .scroll-effect{
     transition: 500ms ease;
-    background:transparent;
+    background: rgba(255, 255, 255, 0.5);
 }
 .scroll-effect.scrolled{
     background:white;
@@ -66,13 +89,15 @@ a{
 .hero{
     // background-image: linear-gradient(to left top, rgba(146, 220, 229, .7), rgba(78, 191, 227, .7), rgba(62, 128, 156, 0.7), rgba(28, 122, 216, .7), rgba(91, 77, 188, .7)),
     // background:linear-gradient(to left top rgba(0,0,0,.3) ,rgba(0,0,0,.3), rgba(0,0,0,.3) ),
+    // background: rgb(91,77,188);
+    // background: linear-gradient(159deg, rgba(91,77,188,.6) 0%, rgba(146,220,229,.6) 100%);
     background: rgb(91,77,188);
-    background: linear-gradient(159deg, rgba(91,77,188,.6) 0%, rgba(146,220,229,.6) 100%),
+    background: linear-gradient(135deg, rgba(91,77,188,.5) 0%, rgba(43,48,58,.5) 100%),
     url(../images/M&S-reception-113.jpeg);
     background-size: cover;
     background-position: center;
-    height: 95vh;
-    min-height: 95vh;
+    height: 100vh;
+    min-height: 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
     
