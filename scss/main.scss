@@ -6,9 +6,18 @@ $sans-serif: "Raleway", Helvetica, Verdana;
 $header-sans-serif: "Lobster", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono";
 $enable-responsive-font-sizes: true;
 
-// $theme-colors: (
+$theme-colors: (
+    "primary": #92dce5,
+    "secondary": #EEE5E9,
+    "success": #6D8FDC,
+    "info": #7C7C7C,
+    "warning": #6DDCBD,
+    "danger": #5B4DBC,
+    "base": #2B303A,
+    "white": #fff,
 
-// );
+
+);
 
 // $link-color: theme-color("secondary");
 // $link-hover-color: darken($link-color, 20%);
@@ -20,43 +29,61 @@ $enable-responsive-font-sizes: true;
 Global Style Rules
 **********************************/
 
+a{
+    cursor: pointer;
+    font-family: $sans-serif;
+    font-weight: 600;
+}
+
 /* NAVIGATION */
+// .logo{
+//     position: absolute;
+//     display: block;
+//     // left: 50%;
+//     transform: translateX(-50%);
+// }
 .navbar-center{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     text-transform: capitalize;
-    
+    font-size: 1.2rem;   
+}
+.nav-item.active{
+    text-decoration: none;
+    text-decoration-color: linear-gradient(to left, #92dce5, #4ebfe3, #009fe2, #1c7ad8, #5b4dbc);
 }
 
 .scroll-effect{
     transition: 500ms ease;
-    background: transparent;
+    background:transparent;
 }
 .scroll-effect.scrolled{
-    background:$light;
+    background:white;
 }
 
 /* HERO */
 .hero{
-    background:linear-gradient(to right bottom, rgba(0, 255, 252, .4), rgba(0, 215, 255, .4), rgba(0, 172, 255, .4), rgba(0, 124, 234, .4), rgba(88, 68, 185, .4)),
-    url(../images/diego-catto-DI6ywiG5N0g-unsplash.jpg);
+    // background-image: linear-gradient(to left top, rgba(146, 220, 229, .7), rgba(78, 191, 227, .7), rgba(62, 128, 156, 0.7), rgba(28, 122, 216, .7), rgba(91, 77, 188, .7)),
+    // background:linear-gradient(to left top rgba(0,0,0,.3) ,rgba(0,0,0,.3), rgba(0,0,0,.3) ),
+    background: rgb(91,77,188);
+    background: linear-gradient(159deg, rgba(91,77,188,.6) 0%, rgba(146,220,229,.6) 100%),
+    url(../images/M&S-reception-113.jpeg);
     background-size: cover;
-    background-position: bottom;
-
-    // background:bottom/cover;
-    // background-image: ;
-    height: 100vh;
-    min-height: 100vh;
-    // background-repeat: no-repeat;
+    background-position: center;
+    height: 95vh;
+    min-height: 95vh;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     
+}
+.hero-logo{
 }
 .title{
     font-family: $header-sans-serif;
 }
 .subtitle{
-    font-weight: 200;
+    font-weight: 300;
 }
 
 
