@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" ,>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Cox and Palkki Family Band</title>
     <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -12,39 +12,47 @@
 </head>
 <body>
     <!-- Navagation -->
-    <nav class="navbar navbar-expand-md navbar-light fixed-top py-4 scroll-effect">
-        <!-- <a class="navbar-brand" href="#">Family Band</a> -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav  navbar-center">
-        <li class="nav-item  px-5">
-        <a class="nav-link" href="index.html">Home </a>
-        </li>
-        <li class="nav-item  active px-5">
-        <a class="nav-link" href="music.html">Music <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item px-5">
-            <a class="nav-link" href="about.html">About</a>
-        </li>
-        <li class="nav-item px-5">
-            <a class="nav-link" href="book.html">Book</a>
-        </li>
-        <li class="nav-item px-5">
-            <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-    </ul>
-    </div>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top shadow scroll-effect">
+            <a class="navbar-brand" href="index.html"><img class="logo " src="./images/logo.png"  alt="Cox and Palkki Family Band Logo "></a>
+        <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <span class="text-primary"><i class="menu_icon fas fa-bars fa-2x"></i></span>
+
+        </button>
+        <div class="collapse navbar-collapse" id="navbarLinks">
+            <ul class="navbar-nav navbar-center text-capitalize">
+                <li class="px-lg-5 px-md-5 px-sm-2"></li>
+
+                <li class="nav-item px-lg-5 px-md-3 px-sm-2 text-center">
+                    <a class="left nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item px-lg-5 px-md-3 px-sm-2 text-center active">
+                    <a class="left nav-link" href="music.html">Music <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item px-lg-5 px-md-3 px-sm-2 text-center">
+                    <a class="left nav-link" href="about.html">About</a>
+                </li>
+
+                <li class="nav-item px-lg-5 px-md-3 px-sm-2 text-center">
+                    <a class="left nav-link" href="book.html">Book</a>
+                </li>
+
+                <li class="nav-item px-lg-5 px-md-3 px-sm-2 text-center">
+                    <a class="left nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
     </nav>
     <!-- End Nav-->
 
     <!-- Header Hero -->
-    <header id="header" class="music-hero">
+    <header id="header" class="music-hero shadow">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col mx-auto text-center">
-                    <h1 class="title display-1">Music</h1>
+                    <h1 class="title display-1 text-white">Music</h1>
                 </div>
             </div>
         </div>
@@ -52,30 +60,30 @@
     <!-- end hero -->
 
     <!-- Sound sample section-->
-    <section class="py-5">
+    <section class="py-5 ">
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h3>Sound Samples</h3>
+                    <h3>Music Samples</h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
-                    Rockin Robin
+                    <h5>Rockin' Robin</h5>
                     <audio controls class="py-2">
                         <source src="/audio/Rockin' Robin Demo.mp3" type="audio/mpeg">
                       Your browser does not support the audio element.
                     </audio>  
                 </div>
                 <div class="col-12">
-                    Christmas Compilation
+                    <h5>Christmas Compilation</h5>
                     <audio controls class="py-2">
                         <source src="/audio/Christmas Compilation.mp3" type="audio/mpeg">
                       Your browser does not support the audio element.
                     </audio>  
                 </div>
                 <div class="col-12">
-                    Orange Blossom
+                    <h5>Orange Blossom</h5>
                     <audio controls class="py-2">
                         <source src="/audio/Orange Blossom Demo.mp3" type="audio/mpeg">
                       Your browser does not support the audio element.
@@ -84,7 +92,7 @@
             </div>
             <div class="row py-3">
                 <div class="col">
-                    <a class="btn btn-outline-primary" href="contact.html">Want to hear them live?</a>
+                    <a class="btn btn-outline-danger" href="contact.html">Want to hear them live?</a>
                 </div>
             </div>
         </div>
@@ -92,54 +100,75 @@
     <!-- end sound sample -->
 
     <!-- Genre-->
-    <section>
+    <section id="genre" class="py-5 bg-secondary shadow">
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h3>What we play</h3>
+                    <h3 class="text-capitalize">What we play</h3>
                     <p>Some of our most common genres we typically perform. We love arranging music and can play certain genres upon request.</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">Oldies</div>
-                <div class="col">Fiddles</div>
-                <div class="col">Rock n Roll</div>
-                <div class="col">Patriotic</div>
-                <div class="col">Christmas</div>
-
+            <div class="row justify-content-around">
+                <div class="col-2 text-center">
+                    <img class="img-responsive genre-icon" src="./images/icons/music (1).png" width="60%" alt="record player">
+                    <h6 class="pt-3 genre">Oldies</h6>
+                </div>
+                <div class="col-2 text-center">
+                    <img class="img-responsive genre-icon" src="./images/icons/violin copy.png" width="60%" alt="record player">
+                    <h6 class="pt-3 genre">Fiddles</h6>
+                </div>
+                <div class="col-2 text-center">
+                    <img class="img-responsive genre-icon" src="./images/icons/electric-guitar.png" width="60%" alt="record player">
+                    <h6 class="pt-3 genre">Rock n' Roll</h6>
+                </div>
+                <div class="col-2 text-center">
+                    <img class="img-responsive genre-icon" src="./images/icons/united-states-of-america.png" width="60%" alt="record player">
+                    <h6 class="pt-3 genre">Patriotic</h6>
+                </div>
+                <div class="col-2 text-center">
+                    <img class="img-responsive genre-icon" src="./images/icons/christmas-tree.png" width="60%" alt="record player">
+                    <h6 class="pt-3 genre">Christmas</h6>
+                </div>
             </div>
         </div>
     </section>
 
 
     <!-- Venues -->
-    <section class="py-5">
+    <section class="py-5 bg- shadow">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <h3>Past Performance Venues Include: </h3>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    Fairs 
-                    Dances 
-                    Weddings 
-                    Rest homes 
-                    Fundraisers 
-                    Outdoor Concerts 
-                    Republican Caucus Meeting 
-                    Firesides 
-                    Family Nights 
-                    Family Reunions  
-                    Holiday Celebrations
-                    Sons and Daughters of the Utah Pioneers 
-                    Christmas Parties 
-                    Community Concerts 
-                    Downtown Ogden Homeless Christmas lunch 
-                    Birthday Parties 
-                    BBQs 
-                    Opening Band for John Schimdt 
+            <div class="row py-3">
+                <div class="col-md-6 col-sm-12 venues">
+                    <i class="fas fa-music py-1"></i> Fairs <br>
+                    <i class="fas fa-music py-1"></i> Dances <br>
+                    <i class="fas fa-music py-1"></i> Weddings <br>
+                    <i class="fas fa-music py-1"></i> Downtown Ogden Homeless Christmas lunch <br>
+                    <i class="fas fa-music py-1"></i> Rest homes <br>
+                    <i class="fas fa-music py-1"></i> Outdoor Concerts <br>
+                    <i class="fas fa-music py-1"></i> Republican Caucus Meeting <br>
+                    <i class="fas fa-music py-1"></i> Opening Band for John Schimdt <br>
+                    <i class="fas fa-music py-1"></i> Family Nights <br>
+                </div>
+                <div class="col-md-6 col-sm-12 venues">
+                    <i class="fas fa-music py-1"></i> Family Reunions  <br>
+                    <i class="fas fa-music py-1"></i> Holiday Celebrations<br>
+                    <i class="fas fa-music py-1"></i> Sons and Daughters of the Utah Pioneers <br>
+                    <i class="fas fa-music py-1"></i> Christmas Parties <br>
+                    <i class="fas fa-music py-1"></i> Community Concerts <br>
+                    <i class="fas fa-music py-1"></i> Birthday Parties <br>
+                    <i class="fas fa-music py-1"></i> BBQs <br>
+                    <i class="fas fa-music py-1"></i> Fundraisers <br>
+                    <i class="fas fa-music py-1"></i> Firesides <br>
+                </div>
+            </div>
+            <div class="row pt-4">
+                <div class="col text-center">
+                    <a class="btn btn-danger" href="contact.html">Book Your Performance</a>
                 </div>
             </div>
         </div>
@@ -148,29 +177,22 @@
 
     <!--Arrangement-->
     <section class="arrangement">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h3>Arrangements</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-4">
-                    <p>	One of the band’s favorite things about playing together is creating their own unique arrangements. Sometimes an arrangement is born out of a jam session. Other times, arrangements are notated with specific parts/chord charts for the band. 
-                    </p>
-                    <a class="btn btn-primary" href="contact.html">Book Now</a>
-                </div>
-                <div class="col-8">
-                    <img src="./images/M&S-reception-113.jpeg"  width=100%; alt="">
-                </div>
+    </section>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col">
+                <h3>Music Arrangements</h3>
+                <p>	One of the band’s favorite things about playing together is creating their own unique arrangements. Sometimes an arrangement is born out of a jam session. Other times, arrangements are notated with specific parts/chord charts for the band. 
+                </p>
             </div>
         </div>
-    </section>
+    </div>
+
     <!-- End arrangement -->
 
 
     <!--Instrumentation-->
-    <section class="instruments py-5">
+    <section class="instruments pb-5">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -237,32 +259,34 @@
 
 
 
-    <!-- Footer -->
-    <footer>
-        <section id="footer" class="pt-5 bg-light">
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col">
-                        <h2>LOGO</h2>
-                    </div>
-                    <div class="col">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="music.html">Music</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="book.html">Book</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h6>Contact</h6>
-                        <p>Kristi Palkki - (801) 866-4867<br>Emilie Cox - (801) 726-6941</p>
-                        <p>familybandemail@fakeemail.com</p>
-                    </div>
+<!-- Footer -->
+<footer>
+    <section id="footer" class="bg-secondary shadow">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col my-auto logo-footer">
+                    <img src="./images/logo.png" class="img-responsive" width="70%;" alt="logo">
+                </div>
+                <div class="col">
+                    <ul class="footer-nav pt-3 text-danger">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="music.html">Music</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="book.html">Book</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col pt-3">
+                    <h5 class="text-base">Contact</h5>
+                    <p>Kristi Palkki <i class="px-1 fas fa-phone-alt"></i><a class="text-danger" href="tel:801-866-4867">(801) 866-4867</a></p>
+                    <p>Emilie Cox <i class="px-1 fas fa-phone-alt"></i><a class="text-danger" href="tel:801-726-6941">(801) 726-6941</a></p>
+                    <a href="mailto:96sarahbell@gmail.com" class="text-danger">familybandemail@fakeemail.com</a>
                 </div>
             </div>
-        </section>
-    </footer>
+        </div>
+    </section>
+</footer>
+
 
 
 

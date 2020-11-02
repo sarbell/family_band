@@ -11216,20 +11216,48 @@ a {
   font-weight: 600;
 }
 
+h1 {
+  font-family: "Lobster", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono";
+}
+
 /* NAVIGATION */
-.navbar-center {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  text-transform: capitalize;
-  font-size: 1.2rem;
+.navbar-brand img {
+  height: 3rem;
+}
+
+.scroll-effect {
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.scroll-effect.scrolled {
+  background: white;
+}
+
+@media screen and (min-width: 767px) {
+  .navbar-center {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    text-transform: capitalize;
+    font-size: 1.2rem;
+  }
 }
 
 .nav-item {
   text-decoration: none;
   -webkit-text-decoration-color: linear-gradient(to left, #92dce5, #4ebfe3, #009fe2, #1c7ad8, #5b4dbc);
           text-decoration-color: linear-gradient(to left, #92dce5, #4ebfe3, #009fe2, #1c7ad8, #5b4dbc);
+}
+
+button.navbar-toggler {
+  border: none;
+}
+
+button.navbar-toggler:focus {
+  outline: none;
 }
 
 a.left {
@@ -11254,20 +11282,10 @@ a.left:hover:before {
   width: 100%;
 }
 
-.scroll-effect {
-  -webkit-transition: 500ms ease;
-  transition: 500ms ease;
-  background: rgba(255, 255, 255, 0.5);
-}
-
-.scroll-effect.scrolled {
-  background: white;
-}
-
-/* HERO */
+/* HERO HOME*/
 .hero {
   background: #5b4dbc;
-  background: linear-gradient(135deg, rgba(91, 77, 188, 0.5) 0%, rgba(43, 48, 58, 0.5) 100%), url(../images/M&S-reception-113.jpeg);
+  background: linear-gradient(135deg, rgba(91, 77, 188, 0.5) 0%, rgba(43, 48, 58, 0.5) 100%), url(../images/hero_image_desktop.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -11276,23 +11294,145 @@ a.left:hover:before {
   background-attachment: fixed;
 }
 
-.title {
-  font-family: "Lobster", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono";
+.hero .subtitle {
+  font-weight: 300;
 }
 
-.subtitle {
-  font-weight: 300;
+.hero .btn {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 576px) {
+  img.logo-hero {
+    width: 95%;
+  }
+  .subtitle {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
 }
 
 /* SOUND BAR FOR HOME */
 #soundbarhome {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 251, 251, 0.2))), url(../images/M&S-reception-114.jpeg) bottom/cover;
-  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 251, 251, 0.2)), url(../images/M&S-reception-114.jpeg) bottom/cover;
+  background: #5b4dbc;
+  background: linear-gradient(135deg, rgba(91, 77, 188, 0.5) 0%, rgba(43, 48, 58, 0.5) 100%), url(../images/audio_section_home.jpg);
   height: 30vh;
   min-height: 30vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 576px) {
+  #soundbarhome {
+    height: 50vh;
+    min-height: 50vh;
+  }
+}
+
+/*  FOOTER MAIN */
+.footer-nav {
+  list-style: none;
+}
+
+.footer-nav li a {
+  color: #5B4DBC;
+  font-size: 1.1rem;
+}
+
+.footer-nav li a:hover {
+  text-decoration: none;
+  background-color: #5B4DBC;
+  color: white;
+}
+
+@media screen and (max-width: 975px) {
+  .logo-footer img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo-footer img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .logo-footer {
+    display: none;
+  }
+  ul {
+    padding: 0;
+  }
+  ul li {
+    display: inline;
+    padding-right: .8rem;
+  }
+}
+
+/************************************
+        MUSIC PAGE
+**************************************/
+/* HERO SECTION */
+.music-hero {
+  background: #5b4dbc;
+  background: linear-gradient(135deg, rgba(91, 77, 188, 0.5) 0%, rgba(43, 48, 58, 0.5) 100%), url(../images/music_hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  min-height: 50vh;
+  background-repeat: no-repeat;
+}
+
+/* Genre Section */
+@media screen and (max-width: 576px) {
+  .genre-icon {
+    width: 100% !important;
+  }
+  .genre {
+    font-size: .6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .genre-icon {
+    width: 90% !important;
+  }
+}
+
+/* Venues */
+.venues {
+  font-size: 1.2rem;
+}
+
+/* arrangements */
+.arrangement {
+  background: #5b4dbc;
+  background: linear-gradient(135deg, rgba(91, 77, 188, 0.4) 0%, rgba(43, 48, 58, 0.4) 100%), url(../images/arrangement.jpg);
+  background-size: cover;
+  background-position: top;
+  height: 40vh;
+  min-height: 40vh;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .arrangement {
+    background-size: cover;
+    background-position: top;
+    height: 20vh;
+    min-height: 20vh;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .arrangement {
+    background-size: cover;
+    background-position: top;
+    height: 16vh;
+    min-height: 16vh;
+  }
 }
 
 /************************************
@@ -11310,26 +11450,12 @@ a.left:hover:before {
 }
 
 /************************************
-        MUSIC PAGE
-**************************************/
-/* HERO SECTION */
-.music-hero {
-  background: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 255, 252, 0.4)), color-stop(rgba(0, 215, 255, 0.4)), color-stop(rgba(0, 172, 255, 0.4)), color-stop(rgba(0, 124, 234, 0.4)), to(rgba(88, 68, 185, 0.4))), url(../images/diego-catto-DI6ywiG5N0g-unsplash.jpg);
-  background: linear-gradient(to right bottom, rgba(0, 255, 252, 0.4), rgba(0, 215, 255, 0.4), rgba(0, 172, 255, 0.4), rgba(0, 124, 234, 0.4), rgba(88, 68, 185, 0.4)), url(../images/diego-catto-DI6ywiG5N0g-unsplash.jpg);
-  background-size: cover;
-  background-position: bottom;
-  height: 50vh;
-  min-height: 50vh;
-  background-attachment: fixed;
-}
-
-/************************************
         BOOK PAGE
 **************************************/
 /* HERO SECTION */
 .book-hero {
-  background: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 255, 252, 0.4)), color-stop(rgba(0, 215, 255, 0.4)), color-stop(rgba(0, 172, 255, 0.4)), color-stop(rgba(0, 124, 234, 0.4)), to(rgba(88, 68, 185, 0.4))), url(../images/diego-catto-DI6ywiG5N0g-unsplash.jpg);
-  background: linear-gradient(to right bottom, rgba(0, 255, 252, 0.4), rgba(0, 215, 255, 0.4), rgba(0, 172, 255, 0.4), rgba(0, 124, 234, 0.4), rgba(88, 68, 185, 0.4)), url(../images/diego-catto-DI6ywiG5N0g-unsplash.jpg);
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 255, 252, 0.4)), color-stop(rgba(0, 215, 255, 0.4)), color-stop(rgba(0, 172, 255, 0.4)), color-stop(rgba(0, 124, 234, 0.4)), to(rgba(88, 68, 185, 0.4))), url(../images/M&S-reception-111.jpeg);
+  background: linear-gradient(to right bottom, rgba(0, 255, 252, 0.4), rgba(0, 215, 255, 0.4), rgba(0, 172, 255, 0.4), rgba(0, 124, 234, 0.4), rgba(88, 68, 185, 0.4)), url(../images/M&S-reception-111.jpeg);
   background-size: cover;
   background-position: bottom;
   height: 50vh;

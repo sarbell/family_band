@@ -34,24 +34,42 @@ a{
     font-family: $sans-serif;
     font-weight: 600;
 }
+h1{
+    font-family: $header-sans-serif;
+}
 
 /* NAVIGATION */
-// .logo{
-//     position: absolute;
-//     display: block;
-//     // left: 50%;
-//     transform: translateX(-50%);
-// }
-.navbar-center{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    text-transform: capitalize;
-    font-size: 1.2rem;   
+.navbar-brand img{
+    height:3rem;
 }
+
+.scroll-effect{
+    transition: 500ms ease;
+    background: rgba(255, 255, 255, 0.5);
+}
+.scroll-effect.scrolled{
+    background:white;
+}
+@media screen and (min-width: 767px){
+    .navbar-center{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        text-transform: capitalize;
+        font-size: 1.2rem;   
+    }
+}
+
 .nav-item{
     text-decoration: none;
     text-decoration-color: linear-gradient(to left, #92dce5, #4ebfe3, #009fe2, #1c7ad8, #5b4dbc);
+}
+
+button.navbar-toggler{
+    border:none;
+}
+button.navbar-toggler:focus{
+    outline:none;
 }
 
 a.left
@@ -76,16 +94,7 @@ a.left:hover:before {
   }
 
 
-
-.scroll-effect{
-    transition: 500ms ease;
-    background: rgba(255, 255, 255, 0.5);
-}
-.scroll-effect.scrolled{
-    background:white;
-}
-
-/* HERO */
+/* HERO HOME*/
 .hero{
     // background-image: linear-gradient(to left top, rgba(146, 220, 229, .7), rgba(78, 191, 227, .7), rgba(62, 128, 156, 0.7), rgba(28, 122, 216, .7), rgba(91, 77, 188, .7)),
     // background:linear-gradient(to left top rgba(0,0,0,.3) ,rgba(0,0,0,.3), rgba(0,0,0,.3) ),
@@ -93,39 +102,169 @@ a.left:hover:before {
     // background: linear-gradient(159deg, rgba(91,77,188,.6) 0%, rgba(146,220,229,.6) 100%);
     background: rgb(91,77,188);
     background: linear-gradient(135deg, rgba(91,77,188,.5) 0%, rgba(43,48,58,.5) 100%),
-    url(../images/M&S-reception-113.jpeg);
+    url(../images/hero_image_desktop.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
     min-height: 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+    .subtitle{
+        $sans-serif: "Raleway";
+        font-weight: 300;
+    }
+
+    .btn{
+        $sans-serif: "Raleway";
+        font-weight: 500;
+    }
+
     
 }
-.hero-logo{
-}
-.title{
-    font-family: $header-sans-serif;
-}
-.subtitle{
-    font-weight: 300;
+@media screen and (max-width: 576px){
+
+    img.logo-hero{
+        width:95%;
+    }
+    .subtitle{
+        padding-right: 2rem;
+        padding-left:2rem;
+    }
 }
 
 
 /* SOUND BAR FOR HOME */
 #soundbarhome{
-    background:linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 251, 251, 0.2)),
-    url(../images/M&S-reception-114.jpeg)bottom/cover;
+    // background:linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 251, 251, 0.2)),
+    background: rgb(91,77,188);
+    background: linear-gradient(135deg, rgba(91,77,188,.5) 0%, rgba(43,48,58,.5) 100%),
+    url(../images/audio_section_home.jpg);
     height: 30vh;
     min-height: 30vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    // background-attachment: fixed;
-
 }
 
 
+@media screen and (max-width: 576px){
+    #soundbarhome{
+        height: 50vh;
+        min-height: 50vh;
+
+    }
+}
+
+
+
+/*  FOOTER MAIN */
+.footer-nav{
+    list-style: none;
+    li a{
+        color: #5B4DBC;
+        font-size:1.1rem;
+    }
+    li a:hover{
+        text-decoration: none;
+        background-color: #5B4DBC;
+        color: white;
+    }
+}
+@media screen and (max-width: 975px){
+    .logo-footer img{
+        width:80%;
+    }
+}
+@media screen and (max-width: 768px){
+    .logo-footer img{
+        width:80%;
+    }
+}
+@media screen and (max-width: 450px){
+    .logo-footer{
+        display: none;
+    }
+    ul{
+        padding:0;
+
+        li{
+            display:inline;
+            padding-right: .8rem;
+        }
+    }
+}
+
+/************************************
+        MUSIC PAGE
+**************************************/
+
+/* HERO SECTION */
+.music-hero{
+    background: rgb(91,77,188);
+    background: linear-gradient(135deg, rgba(91,77,188,.5) 0%, rgba(43,48,58,.5) 100%),
+    url(../images/music_hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    min-height: 50vh;
+    background-repeat: no-repeat;
+}
+
+/* Genre Section */
+
+@media screen and (max-width: 576px){
+    .genre-icon{
+        width: 100% !important;
+
+    }
+    .genre{
+        font-size: .6rem;
+    }
+}
+@media screen and (max-width: 768px){
+    .genre-icon{
+        width: 90% !important;
+
+    }
+}
+
+/* Venues */
+.venues{
+    font-size: 1.2rem;
+}
+
+
+/* arrangements */
+.arrangement{
+    background: rgb(91,77,188);
+    background: linear-gradient(135deg, rgba(91,77,188,.4) 0%, rgba(43,48,58,.4) 100%),
+    url(../images/arrangement.jpg);
+    background-size: cover;
+    background-position: top;
+    height:40vh;
+    min-height: 40vh;
+    background-repeat: no-repeat;
+
+}
+@media screen and (max-width: 768px){
+    .arrangement{
+        background-size: cover;
+        background-position: top;
+        height:20vh;
+        min-height: 20vh;
+
+    }
+}
+@media screen and (max-width: 450px){
+    .arrangement{
+        background-size: cover;
+        background-position: top;
+        height:16vh;
+        min-height: 16vh;
+
+    }
+}
 
 
 /************************************
@@ -151,24 +290,8 @@ a.left:hover:before {
 
 
 
-/************************************
-        MUSIC PAGE
-**************************************/
 
-/* HERO SECTION */
-.music-hero{
-    background:linear-gradient(to right bottom, rgba(0, 255, 252, .4), rgba(0, 215, 255, .4), rgba(0, 172, 255, .4), rgba(0, 124, 234, .4), rgba(88, 68, 185, .4)),
-    url(../images/diego-catto-DI6ywiG5N0g-unsplash.jpg);
-    background-size: cover;
-    background-position: bottom;
 
-    // background:bottom/cover;
-    // background-image: ;
-    height: 50vh;
-    min-height: 50vh;
-    // background-repeat: no-repeat;
-    background-attachment: fixed; 
-}
 
 
 
@@ -179,7 +302,7 @@ a.left:hover:before {
 /* HERO SECTION */
 .book-hero{
     background:linear-gradient(to right bottom, rgba(0, 255, 252, .4), rgba(0, 215, 255, .4), rgba(0, 172, 255, .4), rgba(0, 124, 234, .4), rgba(88, 68, 185, .4)),
-    url(../images/diego-catto-DI6ywiG5N0g-unsplash.jpg);
+    url(../images/M&S-reception-111.jpeg);
     background-size: cover;
     background-position: bottom;
 

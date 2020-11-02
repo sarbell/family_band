@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" ,>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Cox and Palkki Family Band</title>
     <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -13,30 +13,36 @@
 <body>
     <!-- Navagation -->
     <nav class="navbar navbar-expand-md navbar-light fixed-top shadow scroll-effect">
-            <a class="navbar-brand" href="index.html"><img class="logo " src="./images/logo.png" width="16%;" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+            <a class="navbar-brand" href="index.html"><img class="logo " src="./images/logo.png"  alt="Cox and Palkki Family Band Logo "></a>
+        <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="text-primary"><i class="menu_icon fas fa-bars fa-2x"></i></span>
+
         </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav  navbar-center">
-                    <li class="px-lg-5 px-md-3 px-sm-2"></li>
-                    <li class="nav-item px-lg-5 px-md-3 px-sm-2 active">
-                    <a class="left nav-link " href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item px-lg-5 px-md-3 px-sm-2">
+        <div class="collapse navbar-collapse" id="navbarLinks">
+            <ul class="navbar-nav navbar-center text-capitalize">
+                <li class="px-lg-5 px-md-5 px-sm-2"></li>
+
+                <li class="nav-item px-lg-5 px-md-3 px-sm-2 text-center active">
+                    <a class="left nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item px-lg-5 px-md-3 px-sm-2 text-center">
                     <a class="left nav-link" href="music.html">Music</a>
-                    </li>
-                    <li class="nav-item px-lg-5 px-md-3 px-sm-2">
-                        <a class="left nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item px-lg-5 px-md-3 px-sm-2">
-                        <a class="left nav-link" href="book.html">Book</a>
-                    </li>
-                    <li class="nav-item px-lg-5 px-md-3 px-sm-2">
-                        <a class="left nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
+                </li>
+
+                <li class="nav-item px-lg-5 px-md-3 px-sm-2 text-center">
+                    <a class="left nav-link" href="about.html">About</a>
+                </li>
+
+                <li class="nav-item px-lg-5 px-md-3 px-sm-2 text-center">
+                    <a class="left nav-link" href="book.html">Book</a>
+                </li>
+
+                <li class="nav-item px-lg-5 px-md-3 px-sm-2 text-center">
+                    <a class="left nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
     </nav>
     <!-- End Nav-->
 
@@ -45,10 +51,9 @@
         <div class="container-flex h-100">
             <div class="row h-100 align-items-center">
                 <div class="col mx-auto text-center">
-                    <img class="" src="./images/logo-light.png" width="80%;" alt="">
-                    <!-- <h1 class="title display-2">Cox and Palkki Family Band</h1> -->
+                    <img class="logo-hero" src="./images/logo-light.png" width="80%;" alt="">
                     <h2 class="subtitle text-secondary py-3">Sharing faith and family through music</h2>
-                    <a href="book.html" class="btn btn-outline-secondary">Book Now</a>
+                    <a href="book.html" class="btn btn-primary">Book Now</a>
                 </div>
             </div>
         </div>
@@ -56,17 +61,17 @@
     <!-- end hero -->
 
     <!-- Mission Statement -->
-    <section id="mission">
+    <section id="mission" class="shadow">
         <div class="container py-5">
             <div class="row">
                 <div class="col">
-                    <h3>Mission</h3>
+                    <h3>Our Mission</h3>
                     <p>The Cox and Palkki Family Band is comprised of two families who enjoy celebrating faith and family through music. They love arranging and performing many genres of music at various venues in hopes of spreading joy to others.</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col">
-                    <a href="about.html" class="btn btn-outline-primary"> Meet the Band </a>
+                <div class="col text-center">
+                    <a href="about.html" class="btn btn-primary"> Meet the Band </a>
                 </div>
             </div>
         </div>
@@ -74,75 +79,84 @@
     <!-- End mission statement section -->
 
     <!--Sound bar section  -->
-    <section id="soundbarhome" class="py-5">
+    <section id="soundbarhome" class="py-5 shadow">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-lg-6 col-md-6 text-light">
+                    <h3>Our Music</h3>
+                    <p>We play a variety of genres from Bluegrass to Oldies, Sacred to Patriotic, and Rock n’ Roll to Funk. </p>
+                </div>
+                <div class="col-lg-6 col-md-6 text-center my-auto">
                     <audio controls class="py-2">
                         <source src="/audio/Rockin' Robin Demo.mp3" type="audio/mpeg">
+                        <source src="/audio/Rockin' Robin Demo.mp3" type="audio/ogg">
                       Your browser does not support the audio element.
                     </audio>  
-                    <a href="music.html" class="btn btn-danger">Want to Hear More?</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 pt-3 text-center">
+                    <a href="music.html" class="btn btn-primary">Want to Hear More?</a>
                 </div>
             </div>
         </div>
     </section>
     <!-- End sound bar section -->
 
-    <!--Sound bar section  -->
+    <!--WHAT WE DO SECTION -->
     <section id="venuehome">
         <div class="container py-5">
             <div class="row">
                 <div class="col">       
                     <h3>What We Do</h3>
-                    <p>We love playing at different venues and events with a wide variety of music. </p>
+                    <p>We love playing at different venues and events with a wide variety of music.</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-4 d-flex">
-                    <div class="card" style="width: 14rem;">
-                        <img class="card-img-top" src="./images/IMG_1706.jpeg" alt="Card image cap">
+                <div class="col-md-4 col-sm-12 d-flex justify-content-center py-2">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top img-responsive" src="./images/fundraisers.jpg" alt="Card image cap">
                         <div class="card-body flex-fill">
                           <h5 class="card-title">Fundraisers</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-4 d-flex">
-                    <div class="card" style="width: 14rem;">
-                        <img class="card-img-top" src="./images/georg-arthur-pflueger-TeWwYARfcM4-unsplash.jpg" alt="Card image cap">
+                <div class="col-md-4 col-sm-12 d-flex justify-content-center py-2">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top img-responsive" src="./images/resthome.jpeg" alt="Card image cap">
                         <div class="card-body flex-fill">
                           <h5 class="card-title">Rest Homes</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-4 d-flex">
-                    <div class="card" style="width: 14rem;">
-                        <img class="card-img-top" src="./images/chan-lee-c2M0oHNA8c8-unsplash.jpg" alt="Card image cap">
+                <div class="col-md-4 col-sm-12 d-flex justify-content-center py-2">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top img-responsive" src="./images/outdoor_concerts.jpg" alt="Card image cap">
                         <div class="card-body flex-fill">
                           <h5 class="card-title">Outdoor Concerts</h5>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row py-5">
-                <div class="col">
+            <div class="row pt-4">
+                <div class="col text-center">
                     <a href="book.html" class="btn btn-primary">Learn More</a>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End sound bar section -->
+    <!-- WHAT WE DO SECTION -->
 
     <!-- Footer -->
     <footer>
-        <section id="footer" class="pt-5 bg-light">
+        <section id="footer" class="bg-secondary shadow">
             <div class="container">
                 <div class="row justify-content-between">
-                    <div class="col">
-                        <h2>LOGO</h2>
+                    <div class="col my-auto logo-footer">
+                        <img src="./images/logo.png" class="img-responsive" width="70%;" alt="logo">
                     </div>
                     <div class="col">
-                        <ul>
+                        <ul class="footer-nav pt-3 text-danger">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="music.html">Music</a></li>
                             <li><a href="about.html">About</a></li>
@@ -150,10 +164,11 @@
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
-                    <div class="col">
-                        <h6>Contact</h6>
-                        <p>Kristi Palkki - (801) 866-4867<br>Emilie Cox - (801) 726-6941</p>
-                        <p>familybandemail@fakeemail.com</p>
+                    <div class="col pt-3">
+                        <h5 class="text-base">Contact</h5>
+                        <p>Kristi Palkki <i class="px-1 fas fa-phone-alt"></i><a class="text-danger" href="tel:801-866-4867">(801) 866-4867</a></p>
+                        <p>Emilie Cox <i class="px-1 fas fa-phone-alt"></i><a class="text-danger" href="tel:801-726-6941">(801) 726-6941</a></p>
+                        <a href="mailto:96sarahbell@gmail.com" class="text-danger">familybandemail@fakeemail.com</a>
                     </div>
                 </div>
             </div>
