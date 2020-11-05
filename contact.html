@@ -12,57 +12,62 @@
 </head>
 <body>
     <!-- Navagation -->
-    <nav class="navbar navbar-expand-md navbar-light fixed-top py-4 scroll-effect">
-        <!-- <a class="navbar-brand" href="#">Family Band</a> -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top shadow scroll-effect">
+        <a class="navbar-brand" href="index.html"><img class="logo " src="./images/logo.png"  alt="Cox and Palkki Family Band Logo "></a>
+    <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="text-primary"><i class="menu_icon fas fa-bars fa-2x"></i></span>
+
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav  navbar-center">
-        <li class="nav-item active px-5">
-        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item px-5">
-        <a class="nav-link" href="music.html">Music</a>
-        </li>
-        <li class="nav-item px-5">
-            <a class="nav-link" href="about.html">About</a>
-        </li>
-        <li class="nav-item px-5">
-            <a class="nav-link" href="book.html">Book</a>
-        </li>
-        <li class="nav-item px-5">
-            <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-    </ul>
+    <div class="collapse navbar-collapse" id="navbarLinks">
+        <ul class="navbar-nav navbar-center text-capitalize">
+            <li class="px-lg-5 px-md-5 px-sm-2"></li>
+
+            <li class="nav-item px-lg-5 px-md-3 px-sm-2 text-center">
+                <a class="left nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item px-lg-5 px-md-3 px-sm-2 text-center">
+                <a class="left nav-link" href="music.html">Music</a>
+            </li>
+
+            <li class="nav-item px-lg-5 px-md-3 px-sm-2 text-center">
+                <a class="left nav-link" href="about.html">About</a>
+            </li>
+
+            <li class="nav-item px-lg-5 px-md-3 px-sm-2 text-center">
+                <a class="left nav-link" href="book.html">Book</a>
+            </li>
+
+            <li class="nav-item px-lg-5 px-md-3 px-sm-2 text-center active">
+                <a class="left nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
     </div>
     </nav>
     <!-- End Nav-->
 
     <!-- Contact  -->
     <section id="header" class="contact-hero">
-        <div class="container">
+        <div class="container pt-5">
             <div class="row py-5">
-                <div class="col py-5 text-center">
-                    <h1 class="title display-2">Leave Us a Note</h1>
+                <div class="col pt-5 text-center">
+                    <h1 class="title display-1 ">Leave Us a Note <i class="fas fa-music fa-xs"></i></h1>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-4">
-                    <p>
-                        To book either fill out the form, <br>
- 
-                                -or call or text - <br>
-
-                            Kristi Palkki - (801) 866-4867 <br>
-                            Emilie Cox - (801) 726-6941 <br>
-
-                            - Or email -  <br>
-
-                            familybandemail@fakeemail.com <br>
+        </div>
+        <div class="container pt-4">
+            <div class="row pb-5">
+                <div class="col-md-4 col-sm-12">
+                    <p class="contact-information">
+                        To book a performance, either fill out the form
+                        <span class="font-italic">-or- </span> call/text: <br>
+                        Kristi Palkki <a class="text-danger" href="tel:801-866-4867">(801) 866-4867</a><br>
+                        Emilie Cox <a class="text-danger" href="tel:801-726-6941">(801) 726-6941</a> <br>
+                        <span class="font-italic">- or - </span> email us:
+                    <a href="mailto:96sarahbell@gmail.com" class="text-danger">cpband@gmail.com</a>
                     </p>
                 </div>
-                <div class="col-8">
+                <div class="col-md-8 col-sm-12">
                     <form>
                         <div class="form-group">
                             <label for="name">Name</label>
@@ -86,9 +91,9 @@
                         </div>
                         <div class="form-group">
                             <label for="message">Let us know about your inquiry!</label>
-                            <textarea name="message" id="message"  placeholder="ex: We would like you to play at our..." ></textarea>
+                            <textarea name="message" id="message" style="min-width:100%" placeholder="ex: We would like you to play at our..." ></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send</button>
+                        <button type="submit" class="btn btn-danger btn-block">Send  <i class="far fa-paper-plane"></i></button>
                       </form>
                 </div>
             </div>  
@@ -96,18 +101,16 @@
     </section>
     <!-- end  -->
 
-
-
     <!-- Footer -->
     <footer>
-        <section id="footer" class="pt-5 bg-light">
+        <section id="footer" class="bg-secondary shadow">
             <div class="container">
                 <div class="row justify-content-between">
-                    <div class="col">
-                        <h2>LOGO</h2>
+                    <div class="col my-auto logo-footer">
+                        <img src="./images/logo.png" class="img-responsive" width="70%;" alt="logo">
                     </div>
                     <div class="col">
-                        <ul>
+                        <ul class="footer-nav pt-3 text-danger">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="music.html">Music</a></li>
                             <li><a href="about.html">About</a></li>
@@ -115,10 +118,11 @@
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
-                    <div class="col">
-                        <h6>Contact</h6>
-                        <p>Kristi Palkki - (801) 866-4867<br>Emilie Cox - (801) 726-6941</p>
-                        <p>familybandemail@fakeemail.com</p>
+                    <div class="col pt-3">
+                        <h5 class="text-base">Contact</h5>
+                        <p>Kristi Palkki <i class="px-1 fas fa-phone-alt"></i><a class="text-danger" href="tel:801-866-4867">(801) 866-4867</a></p>
+                        <p>Emilie Cox <i class="px-1 fas fa-phone-alt"></i><a class="text-danger" href="tel:801-726-6941">(801) 726-6941</a></p>
+                        <a href="mailto:96sarahbell@gmail.com" class="text-danger">familybandemail@fakeemail.com</a>
                     </div>
                 </div>
             </div>

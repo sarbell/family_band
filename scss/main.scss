@@ -91,7 +91,7 @@ a.left:before {
 a.left:hover:before {
     visibility: visible;
     width: 100%;
-  }
+}
 
 
 /* HERO HOME*/
@@ -266,6 +266,50 @@ a.left:hover:before {
     }
 }
 
+/*  INSTRUMENT PAGE*/
+.instrument{
+    border-radius: 50%;
+    height: 10rem;
+    width: 10rem;
+
+}
+@media screen and(max-width: 992px){
+    .instrument{
+        border-radius: 50%;
+        height: 6rem;
+        width: 6rem;
+    
+    }
+    img.instrument-icon{
+        width: 90% !important;
+    }
+    .instrument-icon{
+        font-size: .8rem;
+    }
+    .long{
+        font-size: .5rem;
+    }
+    
+}
+@media screen and(max-width: 767px){
+    .instrument{
+        border-radius: 50%;
+        height: 6rem;
+        width: 6rem;
+    
+    }
+    img.instrument-icon{
+        width: 90% !important;
+    }
+    .instrument-icon{
+        font-size: .8rem;
+    }
+    .long{
+        font-size: .5rem;
+    }
+    
+}
+
 
 /************************************
         ABOUT PAGE
@@ -273,21 +317,111 @@ a.left:hover:before {
 
 /* HERO SECTION */
 .about-hero{
-    background:linear-gradient(to right bottom, rgba(0, 255, 252, .4), rgba(0, 215, 255, .4), rgba(0, 172, 255, .4), rgba(0, 124, 234, .4), rgba(88, 68, 185, .4)),
-    url(../images/diego-catto-DI6ywiG5N0g-unsplash.jpg);
+    background: rgb(91,77,188);
+    background: linear-gradient(135deg, rgba(91,77,188,.4) 0%, rgba(43,48,58,.4) 100%),
+    url(../images/full_stage_wedding.jpeg);
     background-size: cover;
-    background-position: bottom;
-
-    // background:bottom/cover;
-    // background-image: ;
+    background-position: center;
     height: 50vh;
     min-height: 50vh;
-    // background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-repeat: no-repeat;    
+}
+
+
+
+
+/* Family section */
+.hovereffect {
+    font-family: $sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    width: 100%;
+    height: 90%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+  }
+
+.hovereffect .overlay {
+    position: absolute;
+    overflow: hidden;
+    width: 80%;
+    height:70%;
+    left: 10%;
+    top: 10%;
+    border-bottom: 2px solid #92dce5;
+    border-top: 2px solid #92dce5;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0,1);
+    -ms-transform: scale(0,1);
+    transform: scale(0,1);
+  }
+  
+  .hovereffect:hover .overlay {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  
+  .hovereffect img {
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+  
+  .hovereffect:hover img {
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+    filter: brightness(0.6);
+    -webkit-filter: brightness(0.6);
+  }
+
+  
+  .hovereffect p {
+    color: #FFF;
+    padding: 1em 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+  }
+  @media screen and(max-width: 445px){
+    .hovereffect p{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    
+}
+  
+  .hovereffect:hover p {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+
+
+@media screen and(min-width: 767px){
+    .music-note{
+        width: 50% !important;
+    }
     
 }
 
 
+/* members of the band */
+.band-member{
+    border-radius: 50%;
+    height: 15rem;
+    width: 15rem;
+
+}
 
 
 
@@ -301,18 +435,45 @@ a.left:hover:before {
 
 /* HERO SECTION */
 .book-hero{
-    background:linear-gradient(to right bottom, rgba(0, 255, 252, .4), rgba(0, 215, 255, .4), rgba(0, 172, 255, .4), rgba(0, 124, 234, .4), rgba(88, 68, 185, .4)),
-    url(../images/M&S-reception-111.jpeg);
+    background: rgb(91,77,188);
+    background: linear-gradient(135deg, rgba(91,77,188,.4) 0%, rgba(43,48,58,.4) 100%),
+    url(../images/M&S-reception-110.jpeg);
     background-size: cover;
     background-position: bottom;
-
-    // background:bottom/cover;
-    // background-image: ;
     height: 50vh;
     min-height: 50vh;
-    // background-repeat: no-repeat;
-    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    // background-attachment: fixed; 
 }
+
+/* Accordion */
+.accordion-heading{
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: white;
+    text-transform: capitalize;
+}
+.accordion-heading:hover{
+    color: #EEE5E9;
+}
+.accordion-body{
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+.accordion-links:hover{
+    text-decoration: none;
+}
+
+@media screen and(max-width: 450px){
+    .accordion-body{
+        font-size: 1rem;
+    }
+    .accordion-heading{
+        font-size: 1rem;
+    }
+}
+
+
 
 
 
@@ -323,15 +484,14 @@ a.left:hover:before {
 
 /* HERO SECTION */
 .contact-hero{
-    background:linear-gradient(to right bottom, rgba(0, 255, 252, .4), rgba(0, 215, 255, .4), rgba(0, 172, 255, .4), rgba(0, 124, 234, .4), rgba(88, 68, 185, .4));
-    // url(../images/diego-catto-DI6ywiG5N0g-unsplash.jpg);
-    background-size: cover;
-    background-position: bottom;
 
-    // background:bottom/cover;
-    // background-image: ;
-    height: 100vh;
+    background:linear-gradient(to right bottom, rgba(0, 255, 252, .4), rgba(0, 215, 255, .4), rgba(0, 172, 255, .4), rgba(0, 124, 234, .4), rgba(88, 68, 185, .4));
     min-height: 100vh;
-    // background-repeat: no-repeat;
-    background-attachment: fixed; 
+}
+.contact-information{
+    font-size: 1.1rem;
+}
+.form-group{
+    font-family: $sans-serif;
+    font-size: 1.1rem;
 }
