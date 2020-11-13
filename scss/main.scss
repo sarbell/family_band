@@ -11,7 +11,7 @@ $theme-colors: (
     "primary": #92dce5,
     "secondary": #EEE5E9,
     "success": #6D8FDC,
-    "info": #7C7C7C,
+    "info": #cac9c9,
     "warning": #6DDCBD,
     "danger": #5B4DBC,
     "base": #2B303A,
@@ -38,11 +38,27 @@ a{
 h1{
     font-family: $header-sans-serif;
 }
+h1.display-1{
+    font-size:10rem;
+}
+@media screen and (max-width: 576px){
+    h1.display-1{
+        font-size:7rem;
+    }
+}
 h2, h3, h4, h5, h6, p, li, a, .btn{
     font-family: $sans-serif;
 }
 h2, h3{
     font-weight: 600;
+}
+h5{
+    font-weight: 600;
+}
+.title-underline{
+    width: 5rem;
+    height: .3rem;
+    // margin: 0 auto;
 }
 
 
@@ -51,12 +67,12 @@ h2, h3{
 
 /* NAVIGATION */
 .navbar-brand img{
-    height:3rem;
+    height:3.3rem;
 }
 
 .scroll-effect{
     transition: 500ms ease;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.7);
 }
 .scroll-effect.scrolled{
     background:white;
@@ -71,10 +87,10 @@ h2, h3{
     }
 }
 
-.nav-item{
-    text-decoration: none;
-    text-decoration-color: linear-gradient(to left, #92dce5, #4ebfe3, #009fe2, #1c7ad8, #5b4dbc);
-}
+// .nav-item{
+//     text-decoration: none;
+//     text-decoration-color: linear-gradient(to left, #92dce5, #4ebfe3, #009fe2, #1c7ad8, #5b4dbc);
+// }
 
 button.navbar-toggler{
     border:none;
@@ -103,7 +119,6 @@ a.left:hover:before {
     visibility: visible;
     width: 100%;
 }
-
 
 /* HERO HOME*/
 .hero{
@@ -211,10 +226,13 @@ a.left:hover:before {
     url(../images/music_hero.jpg);
     background-size: cover;
     background-position: center;
-    height: 50vh;
-    min-height: 50vh;
+    height: 60vh;
+    min-height: 60vh;
     background-repeat: no-repeat;
 }
+
+
+
 
 /* Genre Section */
 
@@ -247,8 +265,8 @@ a.left:hover:before {
     url(../images/arrangement.jpg);
     background-size: cover;
     background-position: top;
-    height:40vh;
-    min-height: 40vh;
+    height:43vh;
+    min-height: 43svh;
     background-repeat: no-repeat;
 
 }
@@ -271,49 +289,94 @@ a.left:hover:before {
     }
 }
 
-/*  INSTRUMENT PAGE*/
-.instrument{
-    border-radius: 50%;
-    height: 10rem;
-    width: 10rem;
 
+
+/*  INSTRUMENT PAGE*/
+.instruments{
+    background: rgb(91,77,188);
+    background: linear-gradient(135deg, rgba(91,77,188,.6) 0%, rgba(43,48,58,.6) 100%),
+    url(../images/instrument-section.jpg);
+    background-size: cover;
+    background-position: top;
+    // height: 60vh;
+    // min-height: 60vh;
+    background-repeat: no-repeat;
 }
-@media screen and(max-width: 992px){
+
+.instrument-case{
+    height:15rem;
+    width:10rem;
     .instrument{
         border-radius: 50%;
-        height: 6rem;
-        width: 6rem;
-    
-    }
-    img.instrument-icon{
-        width: 90% !important;
+        height:10rem;
+        width:10rem;
     }
     .instrument-icon{
-        font-size: .8rem;
+        padding-top: 1.5rem;
     }
-    .long{
-        font-size: .5rem;
-    }
-    
 }
-@media screen and(max-width: 767px){
-    .instrument{
-        border-radius: 50%;
-        height: 6rem;
-        width: 6rem;
-    
+
+@media screen and (max-width: 768px){
+    .instrument-case{
+        height:12rem;
+        width:8rem;
+        .instrument{
+            border-radius: 50%;
+            height:8rem;
+            width:8rem;
+        }
+        .instrument-icon{
+            padding-top: 1.5rem;
+        }
     }
-    img.instrument-icon{
-        width: 90% !important;
-    }
-    .instrument-icon{
-        font-size: .8rem;
-    }
-    .long{
-        font-size: .5rem;
-    }
-    
 }
+@media screen and (max-width: 610px){
+    .instrument-case{
+        height:10rem;
+        width:6rem;
+        .instrument{
+            border-radius: 50%;
+            height:6rem;
+            width:6rem;
+        }
+        .instrument-icon{
+            padding-top: 1rem;
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    .instrument-case{
+        height:9rem;
+        width:5rem;
+        .instrument{
+            border-radius: 50%;
+            height:5rem;
+            width:5rem;
+        }
+        .instrument-icon{
+            padding-top: .8rem;
+        }
+    }
+}
+@media screen and (max-width: 403px){
+    .instrument-case{
+        height:7rem;
+        width:3rem;
+        .instrument{
+            border-radius: 50%;
+            height:3rem;
+            width:3rem;
+        }
+        .instrument-icon{
+            padding-top: .5rem;
+        }
+    }
+}
+
+
+
+
+
 
 
 /************************************
