@@ -11229,6 +11229,9 @@ h1.display-1 {
   h1.display-1 {
     font-size: 7rem;
   }
+  h1.display-1.contact-text {
+    font-size: 5rem;
+  }
 }
 
 h2, h3, h4, h5, h6, p, li, a, .btn {
@@ -11241,6 +11244,10 @@ h3 {
 }
 
 h5 {
+  font-weight: 600;
+}
+
+h4 {
   font-weight: 600;
 }
 
@@ -11341,12 +11348,12 @@ a.left:hover:before {
 /* SOUND BAR FOR HOME */
 #soundbarhome {
   background: #5b4dbc;
-  background: linear-gradient(135deg, rgba(91, 77, 188, 0.5) 0%, rgba(43, 48, 58, 0.5) 100%), url(../images/audio_section_home.jpg);
-  height: 30vh;
-  min-height: 30vh;
+  background: linear-gradient(135deg, rgba(91, 77, 188, 0.6) 0%, rgba(43, 48, 58, 0.6) 100%), url(../images/audio_section_home.jpg);
+  min-height: 50vh;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 @media screen and (max-width: 576px) {
@@ -11406,9 +11413,14 @@ a.left:hover:before {
   background: linear-gradient(135deg, rgba(91, 77, 188, 0.5) 0%, rgba(43, 48, 58, 0.5) 100%), url(../images/music_hero.jpg);
   background-size: cover;
   background-position: center;
-  height: 60vh;
-  min-height: 60vh;
+  height: 70vh;
+  min-height: 70vh;
   background-repeat: no-repeat;
+}
+
+.audio-control:hover, .audio-control2:hover, .audio-control3:hover {
+  cursor: pointer;
+  zoom: 1.05;
 }
 
 /* Genre Section */
@@ -11557,8 +11569,8 @@ a.left:hover:before {
   background: linear-gradient(135deg, rgba(91, 77, 188, 0.4) 0%, rgba(43, 48, 58, 0.4) 100%), url(../images/full_stage_wedding.jpeg);
   background-size: cover;
   background-position: center;
-  height: 50vh;
-  min-height: 50vh;
+  height: 70vh;
+  min-height: 70vh;
   background-repeat: no-repeat;
 }
 
@@ -11573,6 +11585,7 @@ a.left:hover:before {
   overflow: hidden;
   position: relative;
   text-align: center;
+  cursor: pointer;
 }
 
 .hovereffect .overlay {
@@ -11648,12 +11661,24 @@ a.left:hover:before {
 /* members of the band */
 .band-member {
   border-radius: 50%;
-  height: 20rem;
-  width: 20rem;
+  width: 40vh;
+}
+
+.title-underline-carousel {
+  width: 5rem;
+  height: .2rem;
+}
+
+.members {
+  background: #5b4dbc;
+  background: linear-gradient(135deg, rgba(91, 77, 188, 0.6) 0%, rgba(43, 48, 58, 0.6) 100%), url(../images/hero_image_desktop.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 /************************************
-        BOOK PAGE
+        FAQ PAGE
 **************************************/
 /* HERO SECTION */
 .book-hero {
@@ -11661,8 +11686,8 @@ a.left:hover:before {
   background: linear-gradient(135deg, rgba(91, 77, 188, 0.4) 0%, rgba(43, 48, 58, 0.4) 100%), url(../images/M&S-reception-110.jpeg);
   background-size: cover;
   background-position: bottom;
-  height: 50vh;
-  min-height: 50vh;
+  height: 70vh;
+  min-height: 70vh;
   background-repeat: no-repeat;
 }
 
@@ -11700,12 +11725,6 @@ a.left:hover:before {
         CONTACT PAGE
 **************************************/
 /* HERO SECTION */
-.contact-hero {
-  background: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 255, 252, 0.4)), color-stop(rgba(0, 215, 255, 0.4)), color-stop(rgba(0, 172, 255, 0.4)), color-stop(rgba(0, 124, 234, 0.4)), to(rgba(88, 68, 185, 0.4)));
-  background: linear-gradient(to right bottom, rgba(0, 255, 252, 0.4), rgba(0, 215, 255, 0.4), rgba(0, 172, 255, 0.4), rgba(0, 124, 234, 0.4), rgba(88, 68, 185, 0.4));
-  min-height: 100vh;
-}
-
 .contact-information {
   font-size: 1.1rem;
 }

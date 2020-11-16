@@ -45,6 +45,9 @@ h1.display-1{
     h1.display-1{
         font-size:7rem;
     }
+    h1.display-1.contact-text{
+        font-size:5rem;
+    }
 }
 h2, h3, h4, h5, h6, p, li, a, .btn{
     font-family: $sans-serif;
@@ -53,6 +56,9 @@ h2, h3{
     font-weight: 600;
 }
 h5{
+    font-weight: 600;
+}
+h4{
     font-weight: 600;
 }
 .title-underline{
@@ -149,6 +155,9 @@ a.left:hover:before {
 
     
 }
+
+
+
 @media screen and (max-width: 576px){
 
     img.logo-hero{
@@ -165,13 +174,14 @@ a.left:hover:before {
 #soundbarhome{
     // background:linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 251, 251, 0.2)),
     background: rgb(91,77,188);
-    background: linear-gradient(135deg, rgba(91,77,188,.5) 0%, rgba(43,48,58,.5) 100%),
+    background: linear-gradient(135deg, rgba(91,77,188,.6) 0%, rgba(43,48,58,.6) 100%),
     url(../images/audio_section_home.jpg);
-    height: 30vh;
-    min-height: 30vh;
+    // height: 30vh;
+    min-height: 50vh;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 
@@ -233,13 +243,15 @@ a.left:hover:before {
     url(../images/music_hero.jpg);
     background-size: cover;
     background-position: center;
-    height: 60vh;
-    min-height: 60vh;
+    height: 70vh;
+    min-height: 70vh;
     background-repeat: no-repeat;
 }
 
-
-
+.audio-control:hover, .audio-control2:hover, .audio-control3:hover{
+    cursor: pointer;
+    zoom: 1.05;
+}
 
 /* Genre Section */
 
@@ -323,6 +335,7 @@ a.left:hover:before {
     }
 }
 
+
 @media screen and (max-width: 768px){
     .instrument-case{
         height:12rem;
@@ -400,8 +413,8 @@ a.left:hover:before {
     url(../images/full_stage_wedding.jpeg);
     background-size: cover;
     background-position: center;
-    height: 50vh;
-    min-height: 50vh;
+    height: 70vh;
+    min-height: 70vh;
     background-repeat: no-repeat;    
 }
 
@@ -419,6 +432,7 @@ a.left:hover:before {
     overflow: hidden;
     position: relative;
     text-align: center;
+    cursor: pointer;
   }
 
 .hovereffect .overlay {
@@ -496,9 +510,19 @@ a.left:hover:before {
 /* members of the band */
 .band-member{
     border-radius: 50%;
-    height: 20rem;
-    width: 20rem;
-
+    width:40vh;
+}
+.title-underline-carousel{
+    width: 5rem;
+    height: .2rem;
+}
+.members{
+    background: rgb(91,77,188);
+    background: linear-gradient(135deg, rgba(91,77,188,.6) 0%, rgba(43,48,58,.6) 100%),
+    url(../images/hero_image_desktop.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;    
 }
 
 
@@ -508,7 +532,7 @@ a.left:hover:before {
 
 
 /************************************
-        BOOK PAGE
+        FAQ PAGE
 **************************************/
 
 /* HERO SECTION */
@@ -518,8 +542,8 @@ a.left:hover:before {
     url(../images/M&S-reception-110.jpeg);
     background-size: cover;
     background-position: bottom;
-    height: 50vh;
-    min-height: 50vh;
+    height: 70vh;
+    min-height: 70vh;
     background-repeat: no-repeat;
     // background-attachment: fixed; 
 }
@@ -563,8 +587,8 @@ a.left:hover:before {
 /* HERO SECTION */
 .contact-hero{
 
-    background:linear-gradient(to right bottom, rgba(0, 255, 252, .4), rgba(0, 215, 255, .4), rgba(0, 172, 255, .4), rgba(0, 124, 234, .4), rgba(88, 68, 185, .4));
-    min-height: 100vh;
+    // background:linear-gradient(to right bottom, rgba(0, 255, 252, .4), rgba(0, 215, 255, .4), rgba(0, 172, 255, .4), rgba(0, 124, 234, .4), rgba(88, 68, 185, .4));
+    // min-height: 100vh;
 }
 .contact-information{
     font-size: 1.1rem;
