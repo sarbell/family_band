@@ -61,6 +61,9 @@ h5{
 h4{
     font-weight: 600;
 }
+h6{
+    font-size:1.2rem;
+}
 .title-underline{
     width: 5rem;
     height: .3rem;
@@ -144,8 +147,8 @@ a.left:hover:before {
     url(../images/hero_image_desktop.jpg);
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    min-height: 100vh;
+    height: 105vh;
+    min-height: 105vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
@@ -154,6 +157,56 @@ a.left:hover:before {
     }
 
     
+}
+.largerText{
+    font-size: 2rem;
+}
+@media screen and (max-width: 600px){
+    .largerText{
+        font-size: 1.5rem;
+    }
+}
+
+.pastEvents{
+    background: rgb(91,77,188);
+    background: linear-gradient(135deg, rgba(91,77,188,.6) 0%, rgba(43,48,58,.6) 100%),
+    url(../images/instrument-section.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;   
+
+    .places{
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 960px){
+    .card.places{
+        width: 25rem;
+    }
+}
+@media screen and (max-width: 768px){
+    .card.places{
+        width: 35rem;
+    }
+}
+
+.eventsList a{
+    color: #6D8FDC;
+
+    &:hover{
+        text-decoration: none;
+        background-color: #6D8FDC;
+        color: white;
+    }
+}
+table{
+    font-family: $sans-serif;
+
+}
+.card{
+    font-family: $sans-serif;
+
 }
 
 
@@ -172,12 +225,10 @@ a.left:hover:before {
 
 /* SOUND BAR FOR HOME */
 #soundbarhome{
-    // background:linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 251, 251, 0.2)),
     background: rgb(91,77,188);
     background: linear-gradient(135deg, rgba(91,77,188,.6) 0%, rgba(43,48,58,.6) 100%),
     url(../images/audio_section_home.jpg);
-    // height: 30vh;
-    min-height: 50vh;
+    // min-height: 50vh;
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -185,13 +236,12 @@ a.left:hover:before {
 }
 
 
-@media screen and (max-width: 576px){
-    #soundbarhome{
-        height: 50vh;
-        min-height: 50vh;
-
-    }
-}
+// @media screen and (max-width: 576px){
+//     #soundbarhome{
+//         height: 50vh;
+//         min-height: 50vh;
+//     }
+// }
 
 
 
@@ -586,9 +636,12 @@ a.left:hover:before {
 
 /* HERO SECTION */
 .contact-hero{
-
-    // background:linear-gradient(to right bottom, rgba(0, 255, 252, .4), rgba(0, 215, 255, .4), rgba(0, 172, 255, .4), rgba(0, 124, 234, .4), rgba(88, 68, 185, .4));
-    // min-height: 100vh;
+    background: rgb(91,77,188);
+    background: linear-gradient(135deg, rgba(91,77,188,0.08) 0%, rgba(43,48,58,0.08) 100%),
+    url(../images/square_bg.png);
+    // background-size: cover;
+    background-position: top;
+    // background-repeat: no-repeat;   
 }
 .contact-information{
     font-size: 1.1rem;
@@ -596,4 +649,16 @@ a.left:hover:before {
 .form-group{
     font-family: $sans-serif;
     font-size: 1.1rem;
+}
+@media screen and (max-width: 770px){
+
+    h1.display-1.contact-text{
+        font-size:4.6rem;
+    }
+}
+@media screen and (max-width: 576px){
+
+    h1.display-1.contact-text{
+        font-size:5rem;
+    }
 }

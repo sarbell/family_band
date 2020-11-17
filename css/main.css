@@ -11251,6 +11251,10 @@ h4 {
   font-weight: 600;
 }
 
+h6 {
+  font-size: 1.2rem;
+}
+
 .title-underline {
   width: 5rem;
   height: .3rem;
@@ -11325,14 +11329,66 @@ a.left:hover:before {
   background: linear-gradient(135deg, rgba(91, 77, 188, 0.5) 0%, rgba(43, 48, 58, 0.5) 100%), url(../images/hero_image_desktop.jpg);
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  min-height: 100vh;
+  height: 105vh;
+  min-height: 105vh;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
 .hero .btn {
   font-weight: 500;
+}
+
+.largerText {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .largerText {
+    font-size: 1.5rem;
+  }
+}
+
+.pastEvents {
+  background: #5b4dbc;
+  background: linear-gradient(135deg, rgba(91, 77, 188, 0.6) 0%, rgba(43, 48, 58, 0.6) 100%), url(../images/instrument-section.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.pastEvents .places {
+  width: 20rem;
+}
+
+@media screen and (max-width: 960px) {
+  .card.places {
+    width: 25rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card.places {
+    width: 35rem;
+  }
+}
+
+.eventsList a {
+  color: #6D8FDC;
+}
+
+.eventsList a:hover {
+  text-decoration: none;
+  background-color: #6D8FDC;
+  color: white;
+}
+
+table {
+  font-family: "Raleway", Helvetica, Verdana;
+}
+
+.card {
+  font-family: "Raleway", Helvetica, Verdana;
 }
 
 @media screen and (max-width: 576px) {
@@ -11349,18 +11405,10 @@ a.left:hover:before {
 #soundbarhome {
   background: #5b4dbc;
   background: linear-gradient(135deg, rgba(91, 77, 188, 0.6) 0%, rgba(43, 48, 58, 0.6) 100%), url(../images/audio_section_home.jpg);
-  min-height: 50vh;
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-
-@media screen and (max-width: 576px) {
-  #soundbarhome {
-    height: 50vh;
-    min-height: 50vh;
-  }
 }
 
 /*  FOOTER MAIN */
@@ -11725,6 +11773,12 @@ a.left:hover:before {
         CONTACT PAGE
 **************************************/
 /* HERO SECTION */
+.contact-hero {
+  background: #5b4dbc;
+  background: linear-gradient(135deg, rgba(91, 77, 188, 0.08) 0%, rgba(43, 48, 58, 0.08) 100%), url(../images/square_bg.png);
+  background-position: top;
+}
+
 .contact-information {
   font-size: 1.1rem;
 }
@@ -11732,5 +11786,17 @@ a.left:hover:before {
 .form-group {
   font-family: "Raleway", Helvetica, Verdana;
   font-size: 1.1rem;
+}
+
+@media screen and (max-width: 770px) {
+  h1.display-1.contact-text {
+    font-size: 4.6rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  h1.display-1.contact-text {
+    font-size: 5rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
