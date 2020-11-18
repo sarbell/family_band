@@ -25,6 +25,40 @@ $theme-colors: (
 
 
 @import "bootstrap";
+/*
+PRELOADER
+*/
+
+.preload{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    height: 105vh;
+    background: rgba(91, 77, 188, .85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.preload h3{
+    position: absolute;
+    top: 41%;
+    transform: translateY(100%, -41%);
+    color: white;
+    font-size: 2.2rem;
+    transition: opacity 0.5s ease;
+}
+
+.preload-finish{
+    opacity: 0;
+    pointer-events:none;
+    transition: opacity 0.5s ease;
+    // display: none;
+}
+
+
+
 
 /*********************************
 Global Style Rules
@@ -589,7 +623,7 @@ table{
 .book-hero{
     background: rgb(91,77,188);
     background: linear-gradient(135deg, rgba(91,77,188,.4) 0%, rgba(43,48,58,.4) 100%),
-    url(../images/M&S-reception-110.jpeg);
+    url(../images/faq.jpg);
     background-size: cover;
     background-position: bottom;
     height: 70vh;
@@ -660,5 +694,112 @@ table{
 
     h1.display-1.contact-text{
         font-size:5rem;
+    }
+}
+
+.violin-contact{
+    display:none;
+    // top: 0;
+    width: 100%;
+    height:70vh;
+    align-items: center;
+    .thankYouText{
+        font-size: 9rem;
+    }
+    .linkThankYou{
+        font-size: 1.5rem;
+    }
+}
+.violin{
+    position: absolute;
+    height: 12rem;
+    left: 43%;
+}
+.violinBow{
+    position: absolute;
+    top:4rem;
+    left:36%;
+    height: 12rem;
+    animation: violin-bow .5s ease infinite alternate;
+}
+@media screen and (max-width: 990px){
+    .violinBow{
+        left:30%;
+    }
+}
+@media screen and (max-width: 776px){
+    .violin{
+        left: 38%;
+    }
+    .violinBow{
+        left:23%;
+    }
+    .violin-contact{
+        height:100vh;
+    }
+}
+@media screen and (max-width: 610px){
+    .violin{
+        left: 30%;
+    }
+    .violinBow{
+        left:15%;
+    }
+    .violin-contact{
+        height:100vh;
+    }
+}
+@media screen and (max-width: 535px){
+    .violin{
+        left: 28%;
+    }
+    .violinBow{
+        left:15%;
+    }
+    .violin-contact{
+        height:100vh;
+        .thankYouText{
+            font-size: 7rem;
+        }
+    }
+ 
+}
+@media screen and (max-width: 460px){
+    .violin{
+        left: 28%;
+    }
+    .violinBow{
+        left:8%;
+    }
+    .violin-contact{
+        height:105vh;
+        .thankYouText{
+            font-size: 6.5rem;
+        }
+    }
+  
+}
+@media screen and (max-width: 390px){
+    .violin{
+        left: 24%;
+    }
+    .violinBow{
+        left:5%;
+    }
+    .violin-contact{
+        height:110vh;
+        .thankYouText{
+            font-size: 5.5rem;
+        }
+    }
+
+}
+
+@keyframes violin-bow{
+    from{
+        transform: translateY(-2rem) translateX(0rem) scaleX(-1); 
+    }
+    to{
+        transform: translateY(0rem) translateX(2.4rem) scaleX(-1);
     }
 }
